@@ -34,7 +34,7 @@ export function activate(context: vscode.ExtensionContext) {
             if (i === array.length - 1) {
               newLine += sub;
             } else {
-              // TODO: 拿不到文件的缩进设置 先凑合
+              // TODO: 拿不到用户的缩进设置 先凑合
               newLine += sub + " " + subSplit + "\n\t";
             }
           });
