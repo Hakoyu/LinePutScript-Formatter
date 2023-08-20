@@ -7,15 +7,38 @@
     "vscode": "^1.81.0"
   },
   "categories": [
-    "Other"
+    "Programming Languages"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand:lineputscript.format",
+    "onLanguage:lps"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "lineputscript.helloWorld",
-        "title": "Hello World"
+        "command": "lineputscript.format",
+        "title": "LinePutScript Format"
+      }
+    ],
+    "languages": [
+      {
+        "id": "lps",
+        "aliases": [
+          "lps",
+          "lps"
+        ],
+        "extensions": [
+          ".lps"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "lps",
+        "scopeName": "source.lps",
+        "path": "./syntaxes/lps.tmLanguage.json"
       }
     ]
   },
