@@ -17,28 +17,30 @@
           "name": "entity.name.class.subSplit",
           "match": "\\:\\|"
         },
-		{
-			"name": "keyword.dataSplit",
-			"match": "\\#"
-		},
-		{
-			"name": "variable.key",
-			"match": "((?<=\\|)|^)[^#]*"
-		},
-		{
-			"name": "string.data",
-			"match": "(?<=\\#)[^\\(\\[\\{:]*"
-		}
-		,
-		{
-			"name": "string.data",
-			"match": "(?<=[\\(\\[\\{])[^\\)\\]\\}]*"
-		}
-		,
-		{
-			"name": "string.data",
-			"match": "(?<=[\\)\\]\\}])[^:]*"
-		}
+        {
+          "name": "keyword.dataSplit",
+          "match": "\\#"
+        },
+        {
+          "name": "keyword.control.import.lineKey",
+          "match": "^[^ \t#]+"
+        },
+        {
+          "name": "variable.key",
+          "match": "((?<=\\|)|^)[^#]+"
+        },
+        {
+          "name": "string.data",
+          "match": "(?<=\\#)[^\\(\\[\\{:]+"
+        },
+        {
+          "name": "string.data",
+          "match": "(?<=[\\(\\[\\{])[^\\)\\]\\}]+"
+        },
+        {
+          "name": "string.data",
+          "match": "(?<=[\\)\\]\\}])[^:]+"
+        }
       ]
     },
 
