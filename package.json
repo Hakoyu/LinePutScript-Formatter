@@ -3,7 +3,7 @@
   "displayName": "LinePutScript",
   "description": "LinePutScript-Formatter",
   "publisher": "Hakoyu",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.81.0"
   },
@@ -54,6 +54,11 @@
             "type": "number",
             "description": "Line feed threshold",
             "default": 64
+          },
+          "lineputscript.formatterSwitch": {
+            "type": "boolean",
+            "description": "Formatter switch",
+            "default": false
           }
         }
       }

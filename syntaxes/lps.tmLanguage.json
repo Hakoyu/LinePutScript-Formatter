@@ -18,12 +18,12 @@
           "match": "\\:\\|"
         },
         {
-          "name": "keyword.dataSplit",
+          "name": "markup.bold.dataSplit",
           "match": "\\#"
         },
         {
           "name": "keyword.control.import.lineKey",
-          "match": "^[^ \t#]+"
+          "match": "^[^#]+"
         },
         {
           "name": "variable.key",

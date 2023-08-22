@@ -18,6 +18,9 @@ export function activate(context: vscode.ExtensionContext) {
   const lineFeedThreshold: number = vscode.workspace
     .getConfiguration(lineputscript)
     .get("lineFeedThreshold") as number;
+  const formatterSwitch: Boolean = vscode.workspace
+    .getConfiguration(lineputscript)
+    .get("formatterSwitch") as boolean;
   let lineEdits: vscode.TextEdit[] = [];
   function formatLineData(lineData: string): string {
     let line = lineData.replace(regexSubSplit, subSplitFormat);
@@ -59,6 +62,13 @@ export function activate(context: vscode.ExtensionContext) {
     document: vscode.TextDocument
   ): Thenable<vscode.TextEdit[]> {
     return new Promise((resolve, reject) => {
+      if (true) {
+        // ! : 暂时关闭格式化
+        vscode.window.showWarningMessage(
+          "LPS does not support formatting at the moment"
+        );
+        return;
+      }
       lineEdits = [];
       let lineData: string = document.lineAt(0).text;
       let tempLine: vscode.TextLine = document.lineAt(0);
