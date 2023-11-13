@@ -3,13 +3,13 @@
   "displayName": "LinePutScript",
   "description": "LinePutScript-Formatter",
   "publisher": "Hakoyu",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "engines": {
     "vscode": "^1.81.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/imliam/vscode-inline-parameters"
+    "url": "https://github.com/Hakoyu/LinePutScript-Formatter"
   },
   "categories": [
     "Programming Languages"
