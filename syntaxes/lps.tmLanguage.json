@@ -27,15 +27,19 @@
         },
         {
           "name": "keyword.control.import.lineKey",
-          "match": "^[^#]+"
+          "match": "^[^#\\:\\|]+"
         },
         {
           "name": "variable.key",
-          "match": "((?<=\\|)|^)[^#]+"
+          "match": "(?:(?<=\\:\\|)[^\n][^#]+)|(?:^[^:\\|]+)"
+        },
+        {
+          "name": "invalid",
+          "match": "[^#]+(?<!:\\|)[ \t]*$\\n"
         },
         {
           "name": "string.data",
-          "match": "(?<=\\#)[^\\(\\[\\{:]+"
+          "match": "(?<=\\#)[^\\(\\[\\{:\\|]+"
         },
         {
           "name": "string.data",

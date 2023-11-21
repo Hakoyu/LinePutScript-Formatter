@@ -3,7 +3,7 @@
   "displayName": "LinePutScript",
   "description": "LinePutScript-Formatter",
   "publisher": "Hakoyu",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "engines": {
     "vscode": "^1.81.0"
   },
