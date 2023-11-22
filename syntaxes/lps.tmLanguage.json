@@ -19,35 +19,31 @@
         },
         {
           "name": "entity.name.class.subSplit",
-          "match": "\\:\\|"
+          "match": ":\\|"
         },
         {
           "name": "markup.bold.dataSplit",
-          "match": "\\#"
+          "match": "#"
         },
         {
           "name": "keyword.control.import.lineKey",
-          "match": "^[^#\\:\\|]+"
+          "match": "^[^#:\\|]+"
         },
         {
           "name": "variable.key",
-          "match": "(?:(?<=\\:\\|)[^\n][^#]+)|(?:^[^:\\|]+)"
+          "match": "(?:(?<=:\\|)[^\n][^#]+)|(?:^[^:\\|]+)"
         },
         {
           "name": "invalid",
-          "match": "[^#]+(?<!:\\|)[ \t]*$\\n"
+          "match": "[^#]+(?<!:\\|[ \t]*)\\n"
         },
         {
           "name": "string.data",
-          "match": "(?<=\\#)[^\\(\\[\\{:\\|]+"
+          "match": "(?<=#)[^:\\|\n]+(?=:\\|)"
         },
         {
-          "name": "string.data",
-          "match": "(?<=[\\(\\[\\{])[^\\)\\]\\}]+"
-        },
-        {
-          "name": "string.data",
-          "match": "(?<=[\\)\\]\\}])[^:]+"
+          "name": "invalid",
+          "match": ".*"
         }
       ]
     },
