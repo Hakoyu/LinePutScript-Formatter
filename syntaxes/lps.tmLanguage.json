@@ -19,7 +19,7 @@
         },
         {
           "name": "entity.name.class.subSplit",
-          "match": ":\\|"
+          "match": "\\:\\|"
         },
         {
           "name": "markup.bold.dataSplit",
@@ -31,15 +31,15 @@
         },
         {
           "name": "variable.key",
-          "match": "(?<=:\\|)[^\n][^#]*"
+          "match": "(?<=\\:\\|)[^\n][^#\\:\\|]*"
         },
         {
           "name": "invalid",
-          "match": "[^#]+(?<!:\\|[ \t]*)\\n"
+          "match": "[^#]+(?<!\\:\\|[ \t]*)\\n"
         },
         {
           "name": "string.data",
-          "match": "(?<=#).+?(?=:\\|)"
+          "match": "(?<=#).+?(?=\\:\\|)"
         },
         {
           "name": "invalid",
